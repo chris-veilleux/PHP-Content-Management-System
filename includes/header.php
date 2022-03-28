@@ -45,7 +45,6 @@
                             require 'includes/db.php';
 
                             // set up query
-                            // *****Do I need pageId? I assume yes to be passed as a url param...?
                             $sql = "SELECT pageTitle, pageId
                                     FROM pages";
 
