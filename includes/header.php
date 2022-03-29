@@ -64,10 +64,10 @@
                             // if the user is logged in, display the admin header
                             echo '
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="admins.php">Administrators</a> 
+                                <a class="nav-link active" aria-current="page" href="admins.php">Administrators</a> 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="pages.php">Pages</a> 
+                                <a class="nav-link active" aria-current="page" href="pages.php">Pages</a> 
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="logout.php">Logout</a>

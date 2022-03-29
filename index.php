@@ -48,5 +48,7 @@ try {
 };
 
 
-// TODO: Update header to change dynamically (linking to empty .php files for now) based on if user is logged in
-// TODO: Fill out .php files available to admins
+// TODO: make add-page.php (both with and without url param)
+// TODO: make delete-page.php
+// TODO: make admins.php
+// TODO: Populate logo and content with fake business info
