@@ -15,6 +15,17 @@ require 'includes/header.php';
         </thead>
         <tbody>
             <?php
+            // check for a url param
+            if (!empty($_GET['message'])) {
+                // if the user has tried to change an admin username to an already taken username, inform them
+                if ($_GET['message'] == 1) {
+                    echo '<h6 class="alert alert-danger">That username is already taken. Please try again.</h6>';
+                }
+                if ($_GET['message'] == 2) {
+                    echo '<h6 class="alert alert-success">User information updated.</h6>';
+                }
+            }
+
             try {
                 // connect to the database
                 require 'includes/db.php';
@@ -32,7 +43,7 @@ require 'includes/header.php';
                     <tr>
                         <td>' . $user['username'] . '</td>
                         <td>
-                            <a class="btn btn-outline-primary btn-sm" href="user-info.php?userId=' . $user['userId'] . '">Edit</a>
+                            <a class="btn btn-outline-primary btn-sm" href="register.php?userId=' . $user['userId'] . '">Edit</a>
                             <a class="btn btn-outline-danger btn-sm" onclick="return confirmDelete()" href="delete-user.php?userId=' . $user['userId'] . '">Delete</a>
                         </td>
                     </tr>

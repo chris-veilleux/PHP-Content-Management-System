@@ -49,4 +49,4 @@ try {
 
 
 // TODO: make admins.php
-// TODO: Populate logo and content with fake business info
+// TODO: Populate logo and content with fake business info and style site
