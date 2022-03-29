@@ -1,5 +1,4 @@
 <?php
-
 try {
     // get form inputs from registration page using the $_POST array
     $userId = $_POST['userId'];
@@ -69,6 +68,7 @@ try {
         else {
             // require authentication, so that anonymous users cannot edit existing users
             require 'includes/auth.php';
+
             // verify that the username does not already exist for another user in the table
             $sql = "SELECT *
                     FROM cmsusers
@@ -103,8 +103,6 @@ try {
                 header('location:admins.php?message=2');
             }
         }
-
-         
     }
 } catch (Exception $error) {
     // if the database connection fails, redirect user to error page
