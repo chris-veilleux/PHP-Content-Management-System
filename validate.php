@@ -19,14 +19,14 @@ try {
     // if the username is not found in the table, redirect the user to the login page
     if (!$user) {
         $db = null;
-        header('location:login.php'); // TODO: redirect them with an error message
+        header('location:login.php?invalid=1');
     }
     // if the username is found, then hash and compare the password from the login page with the password from the database
     else {
         if (!password_verify($password, $user['password'])) {
             // if the passwords don't match, redirect the user to the login page
             $db = null;
-            header('location:login.php'); // TODO: redirect them with an error message
+            header('location:login.php?invalid=1');
         }
         else {
             // if the passwords match, save the username and userId in session variables

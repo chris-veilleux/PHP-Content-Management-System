@@ -40,10 +40,10 @@ if ($valid) {
         $cmd->execute();
         $user = $cmd->fetch();
 
-        // if the username already exists, inform the user of their error and disconnect from the database
+        // if the username already exists, send the user to the login page with a descriptive message
         if ($user) {
-            echo '<p>That username already exists.</p>';
             $db = null;
+            header('location:login.php?invalid=2');
         }
         // if the username is valid, then hash the password and save the user to the table
         else {
