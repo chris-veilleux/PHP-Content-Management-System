@@ -48,7 +48,6 @@ try {
 };
 
 
-// TODO: Set up save-user.php to save the user from register.php to the db
 // TODO: Set up login page/validate page...
 // TODO: Update header to change dynamically (linking to empty .php files for now) based on if user is logged in
 // TODO: Fill out .php files available to admins
