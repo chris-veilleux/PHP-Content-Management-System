@@ -6,6 +6,7 @@ require 'includes/header.php';
 
 <main class="container mt-3">
     <h1>Pages</h1>
+    <a href="page-info.php">Add a new page</a>
     <table class="table">
         <thead>
             <tr>
@@ -32,10 +33,10 @@ require 'includes/header.php';
                     <tr>
                         <td>' . $page['pageTitle'] . '</td>
                         <td>
-                            <a class="btn btn-outline-primary btn-sm" href="add-page.php?pageId=' . $page['pageId'] . '">Edit</a>
-                            <a class="btn btn-outline-danger btn-sm" href="delete-page.php?pageId=' . $page['pageId'] . '">Delete</a>
+                            <a class="btn btn-outline-primary btn-sm" href="page-info.php?pageId=' . $page['pageId'] . '">Edit</a>
+                            <a class="btn btn-outline-danger btn-sm" onclick="return confirmDelete()" href="delete-page.php?pageId=' . $page['pageId'] . '">Delete</a>
                         </td>
-                    ';
+                    </tr>';
                 }
 
                 // disconnect from the database
