@@ -34,8 +34,8 @@ try {
             $_SESSION['username'] = $username;
             $_SESSION['userId'] = $userId['userId'];
 
-            // redirect to the admin dashboard page
-            header('location:dashboard.php');
+            // redirect to the home page
+            header('location:index.php?pageId=1');
 
         }
     }

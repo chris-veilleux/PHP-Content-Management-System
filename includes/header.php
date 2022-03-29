@@ -21,25 +21,13 @@
                 <ul class="navbar-nav">
                     <?php
                     try {
-
-
                         // check if session start has already been called in this http request
                         if (session_status() == PHP_SESSION_NONE) {
                             session_start();
                         }
 
-
-
-
-
-
-
                         // if user is not logged in, display the public header
                         if (empty($_SESSION['username'])) {
-
-                            // use logic to output pages
-                            // query the database and return all of the pages
-                            // use a for loop to iterate over page names and echo them as <li> elements
 
                             // connect to database
                             require 'includes/db.php';
@@ -67,20 +55,23 @@
 
                             echo '<li class="nav-item">
                             <a class="nav-link" aria-current="page" href="register.php">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="login.php">Login</a>
-                        </li>';
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="login.php">Login</a>
+                            </li>';
 
                         } else {
-                            // if the user is logged in, display the username and logout links
-                            // what will username link to? consider removing
-                            echo '<li class="nav-item">
-                                    <a class="nav-link" href="#">' . $_SESSION['username'] . '</a> 
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="logout.php">Logout</a>
-                                </li>';
+                            // if the user is logged in, display the admin header
+                            echo '
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="admins.php">Administrators</a> 
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="pages.php">Pages</a> 
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="logout.php">Logout</a>
+                            </li>';
                         }
                     }
                     catch (Exception $error) {
