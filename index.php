@@ -48,5 +48,4 @@ try {
 };
 
 
-// TODO: make admins.php
-// TODO: Populate logo and content with fake business info and style site
+// TODO: Populate logo and content with fake business info and style site. Review rubric
