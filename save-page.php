@@ -1,7 +1,5 @@
 <?php
 require 'includes/auth.php';
-$title = 'Saving page...';
-require 'includes/header.php';
 
 try {
     // retrieve the form inputs and store them in local variables from page-info.php using the $_POST array
