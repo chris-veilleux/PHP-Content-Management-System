@@ -48,6 +48,5 @@ try {
 };
 
 
-// TODO: make delete-page.php
 // TODO: make admins.php
 // TODO: Populate logo and content with fake business info

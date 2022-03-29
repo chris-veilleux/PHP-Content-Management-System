@@ -24,5 +24,6 @@ try {
     header('location:pages.php');
 
 } catch (Exception $error) {
+    // if the database connection fails, redirect to the error page
     header('location:error.php');
 }
