@@ -5,9 +5,13 @@ require 'includes/header.php';
 ?>
 
 <main class="container mt-3">
-    <h1>Pages</h1>
-    <a href="page-info.php">Add a new page</a>
-    <table class="table">
+    <div class="d-flex align-items-center flex-wrap">
+        <h1 class="flex-grow-1">Pages</h1>
+        <div>
+            <a href="page-info.php" class="btn btn-primary">Add a new page</a>
+        </div>
+    </div>
+    <table class="table table-hover mt-2">
         <thead>
             <tr>
                 <th>Title</th>

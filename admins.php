@@ -6,7 +6,7 @@ require 'includes/header.php';
 
 <main class="container mt-3">
     <h1>Administrators</h1>
-    <table class="table">
+    <table class="table table-hover mt-2">
         <thead>
             <tr>
                 <th>Username</th>
