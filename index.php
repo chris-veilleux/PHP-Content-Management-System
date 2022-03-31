@@ -47,5 +47,6 @@ try {
     header('location:error.php');
 };
 
-
-// TODO: Populate logo and content with fake business info and style site. Review rubric
+// TODO: 404 page
+// TODO: Readme
+// TODO: Document 3rd party css
