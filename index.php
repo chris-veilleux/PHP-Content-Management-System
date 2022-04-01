@@ -42,6 +42,9 @@ try {
 
         }
     }
+    else {
+        header('location:index.php?pageId=1');
+    }
 
 } catch (Exception $error) {
     header('location:error.php');
