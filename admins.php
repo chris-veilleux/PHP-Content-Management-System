@@ -4,7 +4,7 @@ $title = 'Administrators';
 require 'includes/header.php';
 ?>
 
-<main class="container mt-3">
+<main class="container mt-3 col-lg-9">
     <h1>Administrators</h1>
     <table class="table table-hover mt-2">
         <thead>

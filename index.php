@@ -1,5 +1,5 @@
 <?php
-$title = 'Hello';
+$title = "Canada's Best Gym";
 require 'includes/header.php';
 
 try {
@@ -47,6 +47,4 @@ try {
     header('location:error.php');
 };
 
-// TODO: 404 page
 // TODO: Readme
-// TODO: Document 3rd party css

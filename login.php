@@ -3,7 +3,7 @@ $title = 'Login';
 require 'includes/header.php';
 ?>
 
-<main class="container mt-3">
+<main class="container mt-3 col-md-5">
     <h1>Login</h1>
     <?php
     // check for a url param

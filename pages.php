@@ -4,7 +4,7 @@ $title = 'Pages';
 require 'includes/header.php';
 ?>
 
-<main class="container mt-3">
+<main class="container mt-3 col-lg-9">
     <div class="d-flex align-items-center flex-wrap">
         <h1 class="flex-grow-1">Pages</h1>
         <div>

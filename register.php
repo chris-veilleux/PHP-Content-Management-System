@@ -3,7 +3,7 @@ $title = 'Register';
 require 'includes/header.php';
 ?>
 
-<main class="container mt-3">
+<main class="container mt-3 col-md-5">
     <h1>Administrator Registration</h1>
     <h6 class="alert alert-warning" id="message">Passwords must be a minimum of 8 characters, including 1 digit, 1 upper-case letter, and 1 lower-case letter.</h6>
     <form method="post" action="save-user.php">
