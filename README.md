@@ -2,8 +2,6 @@
 This project was created as an Assignment for COMP1006 - Intro to Web Programming.
 It is a content management system for a ficticious gym, "GreatLife Fitness", using PHP and Bootstrap 5.
 
-[Click here to view the live site.](https://lamp.computerstudi.es/~Christopher1167804/comp1006/phpcms/index.php)
-
 ## Public Site
 The public side of the site, accessible to any visitors who are not logged in, displays the list of pages in the header dynamically:
 The pages available to anonymous users are stored as records in a MySQL database, and when the header file loads, it queries the database to dynamically update the navbar.
